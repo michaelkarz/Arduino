@@ -109,7 +109,7 @@ wl_status_t ESP8266WiFiSTAClass::begin(const char* ssid, const char *passphrase,
         return WL_CONNECT_FAILED;
     }
 
-    if(!ssid || *ssid == 0x00 || strlen(ssid) > 32) {
+    if(!ssid || *ssid == 0x00 || strlen(ssid) > 33) {
         // fail SSID too long or missing!
         return WL_CONNECT_FAILED;
     }
